@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Arvo;
+    src: url('../../assets/fonts/arvo-regular-webfont.woff2') format('woff2'),
+         url('../../arvo-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../../assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Lato;
+    src: url('../../assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../../assets/fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    color: $secondary-text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}

@@ -1,0 +1,41 @@
+/* XS Screens Breakpoint */
+@mixin xs {
+    @media screen and ( max-width: #{calc($xs - 1)}px ) {
+        @content;
+    }
+}
+
+/* SM Screens Breakpoint */
+@mixin sm {
+    @media screen and ( min-width: #{$xs}px ) and ( max-width: #{calc($sm - 1)}px ) {
+        @content;
+    }
+}
+
+/* MD Screens Breakpoint */
+@mixin md {
+    @media screen and ( min-width: #{$sm}px ) and ( max-width: #{calc($md - 1)}px ) {
+        @content;
+    }
+}
+
+/* LG Screens Breakpoint */
+@mixin lg {
+    @media screen and ( min-width: #{$md}px ) and ( max-width: #{calc($lg - 1)}px ) {
+        @content;
+    }
+}
+
+/* Mobile Screens Breakpoint */
+@mixin mobile {
+    @media screen and ( max-width: #{calc($sm - 1)}px ) {
+        @content;
+    }
+}
+
+/* Upper Tablet and Desktop Screens Breakpoint */
+@mixin desktop {
+    @media screen and ( min-width: #{calc($md - 1)}px ) {
+        @content;
+    }
+}

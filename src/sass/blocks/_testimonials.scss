@@ -1,0 +1,102 @@
+/* Testimonials Block Style */
+.wl-testimonials {
+    padding-block: 100px;
+    background: linear-gradient(180deg, $background-light 0%, #FFFFFF 100%);
+
+    @include mobile {
+        padding-block: 34px;
+    }
+
+    @include md {
+        padding-block: 50px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 50px;
+        width: 100%;
+
+        @include xs {
+            grid-template-columns: 1fr;
+            gap: 16px;
+        }
+
+        @include sm {
+            gap: 16px;
+        }
+
+        @include md {
+            gap: 24px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px;
+        background-color: #FFFFFF;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+
+        @include sm {
+            padding: 16px;
+        }
+
+        @include md {
+            padding: 24px;
+        }
+    }
+
+    &__content {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+
+        @include sm {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        @include md {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    &__author {
+        color: $hint-text;
+        font-size: 14px;
+        line-height: 120%;
+    }
+
+    &__button-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 100px;
+        max-width: 630px;
+        width: 100%;
+        margin: 0 auto;
+
+        @include xs {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            gap: 16px;
+            padding-top: 34px;
+        }
+
+        @include md {
+            padding-top: 50px;
+        }
+    }
+}

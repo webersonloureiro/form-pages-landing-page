@@ -1,0 +1,67 @@
+/* Footer CTA Block Style */
+.wl-footer-cta {
+    padding-bottom: 100px;
+
+    @include mobile {
+        padding-bottom: 34px;
+    }
+
+    @include md {
+        padding-bottom: 50px;
+    }
+    
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+        max-width: 754px;
+        width: 100%;
+        margin: 0 auto;
+
+        @include md {
+            max-width: 660px;
+        }
+    }
+
+    &__title {
+        color: $primary-text;
+        font-size: 24px;
+        line-height: 125%;
+
+        @include mobile {
+            font-size: 21px;
+        }
+
+        @include md {
+            font-size: 21px;
+        }
+    }
+
+    &__content {
+        font-size: 18px;
+        line-height: 120%;
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    &__link {
+        color: $link-text;
+        font-weight: 700;
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            opacity: .7;
+        }
+
+        @include xs {
+            text-underline-offset: 3px;
+        }
+    }
+}

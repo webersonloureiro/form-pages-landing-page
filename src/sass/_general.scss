@@ -1,0 +1,141 @@
+/* General Custom Classes */
+.wl-hide {
+    display: none !important;
+}
+
+.wl-show {
+    display: block;
+}
+
+/* General Button Style */
+.wl-button {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+    text-decoration: none;
+    text-align: center;
+    min-width: 290px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-out;
+
+    &--primary {
+        color: #FFFFFF;
+        background-color: $orange;
+        border-color: #00000033;
+        
+        &:hover {
+            opacity: .7;
+        }
+    }
+
+    &--secondary {
+        color: $secondary-text;
+        background-color: #FFFFFF;
+        border-color: #DDDDDD;
+
+        &:hover {
+            color: $primary-text;
+            border-color: $primary-text;
+            opacity: .7;
+        }
+    }
+
+    @include sm {
+        min-width: 265px;
+    }
+
+    @include mobile {
+        font-size: 16px;
+    }
+
+    @include md {
+        font-size: 18px;
+    }
+}
+
+/* General Card Style */
+.wl-card {
+    padding: 48px 51px;
+
+    @include xs {
+        padding: 34px 16px;
+        border-bottom: 1px solid $border-color;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    @include sm {
+        padding: 48px 28px;
+        border-bottom: 1px solid $border-color;
+    }
+
+    @include md {
+        padding: 48px 28px;
+    }
+
+    @include desktop {
+        &:nth-child(1),
+        &:nth-child(4) {
+            padding-left: 0;
+            border-right: 1px solid $border-color;
+        }
+
+        &:nth-child(3),
+        &:nth-child(6) {
+            padding-right: 0;
+            border-left: 1px solid $border-color;
+        }
+    }
+
+    &__wrapper {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+        
+        @include mobile {
+            width: 100%;
+        }
+
+        @include md {
+            width: 100%;
+        }
+    }
+
+    &__icon {
+        svg {
+            margin: 0 auto;
+        }
+    }
+
+    &__title {
+        color: $primary-text;
+        font-size: 24px;
+        line-height: 125%;
+
+        @include mobile {
+            font-size: 21px;
+        }
+
+        @include md {
+            font-size: 21px;
+        }
+    }
+
+    &__content {
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
